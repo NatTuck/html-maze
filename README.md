@@ -28,3 +28,42 @@ git status
 git add -A .
 git commit -a -m 'maze'
 ```
+
+## Setup an SSH key
+
+```
+ssh-keygen
+```
+
+Then press enter three times for blank responses.
+
+```
+cat ~/.ssh/id_ed25519.pub
+```
+
+Copy the thing that looks kind of like:
+
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL/lzNEzueQ5PraDma4brKJ3Xq7N3I9yvzNKbrBY+Vfq rbl@psu-robotics-noble-1
+
+```
+
+## On Github
+
+- Create new repository, probably with the same name as the project directory.
+- Settings (for the new repository), deploy keys, add deploy key, paste in big box;
+check "Allow write access"
+
+Back on Code, make sure SSH is selected, and follow the directions to push
+an existing repository from the command line.
+
+Once you push, the stuff should be in your repository.
+
+Finally, set up Github Pages
+
+- Settings (for the repository), Pages, Deploy from a branch, called main, save.
+
+It'll take a second, but eventually the Pages settings screen will say
+"Your site is live at" and give a link.
+
+
