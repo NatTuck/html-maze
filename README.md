@@ -67,3 +67,21 @@ It'll take a second, but eventually the Pages settings screen will say
 "Your site is live at" and give a link.
 
 
+## Finally, security cleanup
+
+- You just created an SSH key that's authorized to make changes to a repository
+on your Github account.
+- If you did that on a lab computer, you probably want to delete it from either
+the lab computer or the github repo (or both) once you're done.
+- Delete from lab computer with `rm ~/.ssh/id_ed25519`
+- Delete from the Github repo by clicking back to settings, deploy keys,
+and hitting the delete butto
+## Finally, security cleanup
+
+- You just created an SSH key that's authorized to make changes to a repository
+on your Github account.
+- If you did that on a lab computer, you probably want to delete it from either
+the lab computer or the github repo (or both) once you're done.
+- Delete from lab computer with `rm ~/.ssh/id_ed25519`
+- Delete from the Github repo by clicking back to settings, deploy keys,
+and hitting the delete button.
